@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Carpathian mountains</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!--------NAV-------->
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="#Slider">Slider</a></li>
+                <li><a href="#Block">Block</a></li>
+            </ul>
+        </div>
+        <div class="button__questions">
+
+            <img alt="menu" src="img/menu.png" />
+
+        </div>
+    </div>
+
+    <!----Questionnaire-->
+    <div class="questions" id="forma">
+        <div class="form">
+            <form method="get" action="#">
+                Registation:
+                <br /><br /><br />
+                <label>
+                    Name:
+                    <input type="text" />
+
+                </label>
+                <br />
+                <label>
+                    Second name:
+                    <input type="text" />
+                </label>
+                <br />
+                <label>
+                    Parol:
+                    <input type="password" name="pass" />
+                </label>
+                <br />
+                <input type="radio" name="f1" />
+                male
+                <input type="radio" name="f1" />
+                female
+
+                <br />
+                <hr />
+                email:
+                <input type="email" name="email" required="required" autofocus="autofocus" placeholder="email" />
+                <br />
+                Phone number:
+                <input type="tel" name="tel" pattern="8-[0-9][10]" />
+                <br />
+                Your favorite color:
+                <input type="color" name="color" />
+                <br />
+                Birthday:
+                <input type="date" name="date" />
+                <br />
+                Comment:
+                <input type="text" name="text" />
+                <br />
+                <input type="submit" />
+
+            </form>
+
+        </div>
+        <div class="button__close">
+            <button><img alt="close" src="img/close.png" /></button>
+        </div>
+    </div>
+
+    <!---ABOUT MOUNTAINS--->
+    <h1>Carpathian mountains</h1>
+    <div class="about__mountains">
+        <p>
+            Ukraine’s vast territory makes it an amazing destination for hiking.
+            However, the most exciting trails are located in the Carpathian Mountains.
+            One of the highest mountain ranges, Chornohora, is worth seeing, as people say you can
+            observe the panorama of the whole Western Ukraine from the top. Another trail to take is
+            the Marmarosh massif, which lies on the border with Romania. At 1,940 metres (6,364 feet)
+            high at its peak, this trail is especially beautiful in spring and summer
+            when the greenery, colourful flowers and berries cover the mountaintops.
+        </p>
+        <img class="current" alt="one" src="img/1.1.jpg" style="width: 300px; height: 200px;"/>
+    </div>
+
+    <!---SLIDER--->
+    <div class="slider">
+        <h2>Slider</h2>
+
+        <div class="imgs">
+            <a name="Slider"></a>
+            <img class="current" alt="one" src="img/9.jpg" />
+            <img class="current" alt="two" src="img/10.jpg" />
+            <img class="current" alt="three" src="img/11.jpg" />
+            <img class="current" alt="four" src="img/6.jpg " />
+
+        </div>
+        <div class="buttons">
+            <button class="prev"><img src="img/left.png" alt="left" /></button>
+            <button class="next"><img src="img/right.png" alt="right" /></button>
+        </div>
+    </div>
+    <!----COLOR BLOCK--->
+    <h2>Color block</h2>
+    <div id="my_box">
+
+        <a name="Block"></a>
+    </div>
+    <!--Coryright--->
+    <p class="copy">Photo by <a href="https://www.behance.net/gallery/26118377/Carpathian-november?tracking_source=search_projects_recommended%7CCarpathian%20mountains,%20Ukraine">Behonce</a></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

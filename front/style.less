@@ -1,0 +1,263 @@
+@fsz: 16px;
+
+html {
+    font-size: @fsz;
+}
+
+body {
+    background-color: #2f2f2f;
+    background-attachment: fixed;
+    
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Texturina', serif;
+    text-align: center;
+    padding: 2%;
+}
+.nav {
+    display: flex;
+}
+ul {
+    font-family: 'Texturina', serif;
+    font-size: 2rem;
+    display: flex;
+
+    li {
+        margin: 5%;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: burlywood;
+    }
+}
+
+.button__questions {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+.about__mountains {
+    background-color: #ffffff;
+    width: 100%;
+
+
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Texturina', serif;
+        width: 50%;
+        padding: 5%;
+        margin-left: 25%;
+    }
+
+    p::first-letter {
+        font-size: 4rem;
+        color: #ffd700;
+        float: left;
+        margin: -10px 2px 2px -30px;
+    }
+    img{
+        margin-left: 40%;
+        margin-bottom: 2%;
+    }
+}
+
+.questions {
+    background-color: #ffffff;
+    margin: 2% auto;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Texturina', serif;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 25%;
+
+    form {
+        margin: 2%;
+
+        input {
+            margin: 2%;
+            padding: 2%;
+        }
+    }
+
+    button__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    button {
+        width: 75px;
+        height: 75px;
+        right: 1%;
+        margin-right: 5%;
+        align-items: end;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Texturina', serif;
+    text-align: center;
+    margin: 2%;
+}
+.slider {
+    display: flex;
+    margin: 2% auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .imgs {
+        text-align: center;
+        display: flex;
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .current {
+            opacity: 1;
+        }
+
+        img {
+            opacity: 0;
+            position: absolute;
+            transition: all .6s;
+            width: 800px;
+            height: 500px;
+        }
+    }
+
+
+    .buttons {
+        text-align: center;
+
+        button {
+            margin: 20px 50px 0;
+            width: 75px;
+            height: 75px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
+
+
+        .prev {
+            background: center center no-repeat;
+        }
+
+        .next {
+            background: center center no-repeat;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+#my_box {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #ffd700;
+    transition: 2s;
+    
+}
+
+
+.copy {
+    color: white;
+    text-align: center;
+    margin: 2%;
+    font-family: 'Texturina', serif;
+
+    a {
+        color: white;
+    }
+}
+
+
+
+
+@media screen and (max-width: 860px) {
+
+    .about__mountains {
+        margin: 2% 0;
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: 'Texturina', serif;
+            width: 90%;
+            padding: 5%;
+            margin-left: 5%;
+        }
+    }
+    .slider {
+
+        .imgs {
+            width: 400px;
+            height: 250px;
+
+            img {
+                width: 400px;
+                height: 250px;
+            }
+        }
+    }
+    
+    .questions{
+        padding-left: 20%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .button__questions{
+        display: inline;
+    }
+}
