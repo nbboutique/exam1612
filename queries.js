@@ -10,7 +10,7 @@ const pool = new Pool({
 
 const getData = (reqest, response) => {
   response.header("Access-Control-Allow-Origin", "*");
-  pool.query('SELECT * FROM "public".data', (error, data) => {
+  pool.query('SELECT * FROM "public".exam1612', (error, data) => {
       response.header("Access-Control-Allow-Origin", "*");
     if (error) {throw error}
     response.status(200).json(data.rows)
@@ -20,7 +20,7 @@ const getData = (reqest, response) => {
 const getDataById = (reqest, response) => {
     response.header("Access-Control-Allow-Origin", "*");
   const id = parseInt(reqest.params.id)
-  pool.query('SELECT * FROM "public".data WHERE id = $1', [id], (error, data) => {
+  pool.query('SELECT * FROM "public".exam1612 WHERE id = $1', [id], (error, data) => {
     if (error) {throw error}
     response.status(200).json(data.rows)
 
